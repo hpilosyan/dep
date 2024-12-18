@@ -9,12 +9,6 @@ updates:
     directory: "/ui/houston"
     schedule:
       interval: "daily"
-    allow: 
-      - dependency-type: production
     groups:
-      production-dependencies:
-        dependency-type: "production"
-        applies-to: version-updates
-      development-dependencies:
-        dependency-type: "development"
+      all-dependencies:
         applies-to: version-updates
