@@ -26,6 +26,6 @@ updates:
       dev-dependencies:
         dependency-type: "development"
         applies-to: version-updates      
-      update-types:
-        - "minor"
-        - "patch"
+        update-types:
+          - "minor"
+          - "patch"
