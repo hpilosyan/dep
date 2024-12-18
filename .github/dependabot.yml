@@ -10,5 +10,9 @@ updates:
     schedule:
       interval: "daily"
     groups:
-      all-dependencies:
+      dev-dependencies:
+        dependency-type: "development"
+        applies-to: version-updates
+      prod-dependencies:
+        dependency-type: "production"
         applies-to: version-updates
