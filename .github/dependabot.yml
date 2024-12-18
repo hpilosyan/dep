@@ -5,9 +5,27 @@
 
 version: 2
 updates:
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/ui/houston" # Location of package manifests
+  - package-ecosystem: "npm"
+    directory: "/ui/houston"
     schedule:
       interval: "daily"
     allow: 
       - dependency-type: production
+    groups:
+      runtime-dependencies:
+        dependency-type: "production"
+        applies-to: version-updates
+ 
+  - package-ecosystem: "npm"
+    directory: "/ui/houston"
+    schedule:
+      interval: "daily"
+    allow: 
+      - dependency-type: development
+    groups:
+      dev-dependencies:
+        dependency-type: "development"
+        applies-to: version-updates      
+      update-types:
+        - "minor"
+        - "patch"
