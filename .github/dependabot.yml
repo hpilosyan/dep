@@ -12,6 +12,9 @@ updates:
     allow: 
       - dependency-type: production
     groups:
-      runtime-dependencies:
-        dependency-type: "all"
+      production-dependencies:
+        dependency-type: "production"
+        applies-to: version-updates
+      development-dependencies:
+        dependency-type: "development"
         applies-to: version-updates
