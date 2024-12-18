@@ -13,5 +13,4 @@ updates:
       - dependency-type: production
     groups:
       runtime-dependencies:
-        dependency-type: "production"
         applies-to: version-updates
