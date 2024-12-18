@@ -15,17 +15,3 @@ updates:
       runtime-dependencies:
         dependency-type: "production"
         applies-to: version-updates
- 
-  - package-ecosystem: "npm"
-    directory: "/ui/houston"
-    schedule:
-      interval: "monthly"
-    allow: 
-      - dependency-type: development
-    groups:
-      dev-dependencies:
-        dependency-type: "development"
-        applies-to: version-updates      
-        update-types:
-          - "minor"
-          - "patch"
