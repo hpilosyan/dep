@@ -9,6 +9,9 @@ updates:
     directory: "/ui/houston"
     schedule:
       interval: "daily"
+    ignore:
+      - dependency-name: 'react'
+        versions: '>= 19'
     groups:
       dev-dependencies:
         dependency-type: "development"
