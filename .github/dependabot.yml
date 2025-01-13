@@ -8,5 +8,9 @@ updates:
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
     groups:
-      all-dependencies:
+      dev-dependencies:
+        dependency-type: "development"
+        applies-to: version-updates
+      runtime-dependencies:
+        dependency-type: "production"
         applies-to: version-updates
