@@ -1,9 +1,12 @@
 version: 2
 updates:
-  - package-ecosystem: 'npm'
+  - package-ecosystem: "npm"
     directory: "/ui/houston"
     schedule:
-      interval: 'weekly'
+      interval: "daily"
     ignore:
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
+    groups:
+      all-dependencies:
+        applies-to: version-updates
