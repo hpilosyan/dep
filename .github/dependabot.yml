@@ -14,3 +14,11 @@ updates:
       runtime-dependencies:
         dependency-type: "production"
         applies-to: version-updates
+  
+  - package-ecosystem: "gomod"
+    directory: "/"
+    schedule:
+      interval: weekly
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
