@@ -22,3 +22,10 @@ updates:
     ignore:
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
+    groups:
+      dev-dependencies:
+        dependency-type: "development"
+        applies-to: version-updates
+      runtime-dependencies:
+        dependency-type: "production"
+        applies-to: version-updates
